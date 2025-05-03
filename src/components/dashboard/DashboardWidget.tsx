@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { cn } from "@/lib/utils";
 
 interface DashboardWidgetProps {
-  title: string;
+  title: ReactNode;
   description?: string;
   className?: string;
   children: ReactNode;
