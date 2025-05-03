@@ -110,7 +110,7 @@ export default {
 				'slide-in': 'slide-in 0.3s ease-out'
 			},
 			fontFamily: {
-				sans: ['Inter var', 'sans-serif'],
+				sans: ['Inter', 'sans-serif'],
 				serif: ['Crimson Pro', 'serif']
 			}
 		}

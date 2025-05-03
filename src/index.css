@@ -94,6 +94,10 @@
     @apply bg-background text-foreground antialiased;
   }
   
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  
   .focus-ring {
     @apply ring-2 ring-offset-2 ring-primary outline-none;
   }

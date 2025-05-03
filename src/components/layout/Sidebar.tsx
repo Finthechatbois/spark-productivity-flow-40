@@ -25,21 +25,32 @@ import {
   Settings, 
   Star,
   Folder,
-  Clock
+  Clock,
+  Heart,
+  Boxes,
+  Database,
+  Leaf,
+  Cog
 } from "lucide-react";
 
 const sidebarItems = [
   { icon: Home, label: "Personal Hub", href: "/" },
+  { icon: Home, label: "Home", href: "/home" },
   { icon: ListTodo, label: "Tasks", href: "/tasks" },
   { icon: FileText, label: "Notes", href: "/notes" },
   { icon: Calendar, label: "Calendar", href: "/calendar" },
   { icon: Inbox, label: "Inbox", href: "/inbox" },
-  { icon: Folder, label: "Projects", href: "/projects" }
+  { icon: Folder, label: "Projects", href: "/projects" },
+  { icon: Heart, label: "Health", href: "/health" },
+  { icon: Boxes, label: "Inventory", href: "/inventory" },
+  { icon: Leaf, label: "Garden", href: "/garden" },
 ];
 
 const toolsItems = [
   { icon: Star, label: "Bookmarks", href: "/bookmarks" },
   { icon: Clock, label: "Time Blocking", href: "/time-blocking" },
+  { icon: Cog, label: "Automations", href: "/automations" },
+  { icon: Database, label: "Proxmox Server", href: "/proxmox" },
   { icon: Settings, label: "Settings", href: "/settings" }
 ];
 
@@ -57,7 +68,7 @@ const Sidebar = () => {
           <div className="h-6 w-6 rounded-md bg-primary flex items-center justify-center">
             <span className="text-xs font-bold text-primary-foreground">NX</span>
           </div>
-          <div className="font-medium text-lg">Nexus</div>
+          <div className="font-serif font-medium text-lg">Nexus</div>
         </div>
       </SidebarHeader>
       <SidebarContent>

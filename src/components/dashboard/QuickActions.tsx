@@ -1,7 +1,7 @@
 
 import DashboardWidget from "./DashboardWidget";
 import { Button } from "@/components/ui/button";
-import { FileText, Plus, CalendarPlus, Folder, Clock } from "lucide-react";
+import { FileText, Plus, CalendarPlus, Folder, Clock, Heart, Boxes, Leaf, Home, Cog } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 
@@ -42,6 +42,36 @@ const quickActions: QuickAction[] = [
     label: "Time Block",
     href: "/time-blocking/new",
     color: "bg-red-50 text-red-600 hover:bg-red-100 dark:bg-red-900/20 dark:text-red-400 dark:hover:bg-red-900/40",
+  },
+  {
+    icon: Heart,
+    label: "Health Log",
+    href: "/health/log",
+    color: "bg-pink-50 text-pink-600 hover:bg-pink-100 dark:bg-pink-900/20 dark:text-pink-400 dark:hover:bg-pink-900/40",
+  },
+  {
+    icon: Home,
+    label: "Home",
+    href: "/home",
+    color: "bg-sky-50 text-sky-600 hover:bg-sky-100 dark:bg-sky-900/20 dark:text-sky-400 dark:hover:bg-sky-900/40",
+  },
+  {
+    icon: Boxes,
+    label: "Inventory",
+    href: "/inventory/add",
+    color: "bg-indigo-50 text-indigo-600 hover:bg-indigo-100 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:bg-indigo-900/40",
+  },
+  {
+    icon: Leaf,
+    label: "Garden",
+    href: "/garden",
+    color: "bg-emerald-50 text-emerald-600 hover:bg-emerald-100 dark:bg-emerald-900/20 dark:text-emerald-400 dark:hover:bg-emerald-900/40",
+  },
+  {
+    icon: Cog,
+    label: "Automation",
+    href: "/automations/new",
+    color: "bg-slate-50 text-slate-600 hover:bg-slate-100 dark:bg-slate-900/20 dark:text-slate-400 dark:hover:bg-slate-900/40",
   }
 ];
 

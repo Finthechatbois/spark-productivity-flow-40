@@ -17,6 +17,12 @@ import Bookmarks from "./pages/Bookmarks";
 import Settings from "./pages/Settings";
 import Projects from "./pages/Projects";
 import TimeBlocking from "./pages/TimeBlocking";
+import Home from "./pages/Home";
+import Health from "./pages/Health";
+import Inventory from "./pages/Inventory";
+import Garden from "./pages/Garden";
+import Automations from "./pages/Automations";
+import Proxmox from "./pages/Proxmox";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -83,6 +89,54 @@ const App = () => (
               element={
                 <AppShell>
                   <TimeBlocking />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/home" 
+              element={
+                <AppShell>
+                  <Home />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/health" 
+              element={
+                <AppShell>
+                  <Health />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/inventory" 
+              element={
+                <AppShell>
+                  <Inventory />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/garden" 
+              element={
+                <AppShell>
+                  <Garden />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/automations" 
+              element={
+                <AppShell>
+                  <Automations />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/proxmox" 
+              element={
+                <AppShell>
+                  <Proxmox />
                 </AppShell>
               } 
             />
