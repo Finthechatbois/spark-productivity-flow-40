@@ -16,19 +16,30 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Calendar, FileText, Home, Inbox, ListTodo, Settings, Star, Users } from "lucide-react";
+import { 
+  Calendar, 
+  FileText, 
+  Home, 
+  Inbox, 
+  ListTodo, 
+  Settings, 
+  Star,
+  Folder,
+  Clock
+} from "lucide-react";
 
 const sidebarItems = [
-  { icon: Home, label: "Dashboard", href: "/" },
+  { icon: Home, label: "Personal Hub", href: "/" },
   { icon: ListTodo, label: "Tasks", href: "/tasks" },
   { icon: FileText, label: "Notes", href: "/notes" },
   { icon: Calendar, label: "Calendar", href: "/calendar" },
-  { icon: Inbox, label: "Inbox", href: "/inbox" }
+  { icon: Inbox, label: "Inbox", href: "/inbox" },
+  { icon: Folder, label: "Projects", href: "/projects" }
 ];
 
 const toolsItems = [
   { icon: Star, label: "Bookmarks", href: "/bookmarks" },
-  { icon: Users, label: "Team", href: "/team" },
+  { icon: Clock, label: "Time Blocking", href: "/time-blocking" },
   { icon: Settings, label: "Settings", href: "/settings" }
 ];
 

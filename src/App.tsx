@@ -14,8 +14,9 @@ import Notes from "./pages/Notes";
 import Calendar from "./pages/Calendar";
 import Inbox from "./pages/Inbox";
 import Bookmarks from "./pages/Bookmarks";
-import Team from "./pages/Team";
 import Settings from "./pages/Settings";
+import Projects from "./pages/Projects";
+import TimeBlocking from "./pages/TimeBlocking";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -70,10 +71,18 @@ const App = () => (
               } 
             />
             <Route 
-              path="/team" 
+              path="/projects" 
               element={
                 <AppShell>
-                  <Team />
+                  <Projects />
+                </AppShell>
+              } 
+            />
+            <Route 
+              path="/time-blocking" 
+              element={
+                <AppShell>
+                  <TimeBlocking />
                 </AppShell>
               } 
             />
