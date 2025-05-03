@@ -5,6 +5,7 @@ import TaskWidget from "@/components/dashboard/TaskWidget";
 import NotesWidget from "@/components/dashboard/NotesWidget";
 import CalendarWidget from "@/components/dashboard/CalendarWidget";
 import MetricsWidget from "@/components/dashboard/MetricsWidget";
+import PersonalFinanceWidget from "@/components/dashboard/PersonalFinanceWidget";
 
 const Dashboard = () => {
   return (
@@ -33,6 +34,10 @@ const Dashboard = () => {
         <div className="col-span-3 md:col-span-1">
           <CalendarWidget />
         </div>
+      </div>
+      
+      <div className="grid gap-6 grid-cols-1">
+        <PersonalFinanceWidget />
       </div>
       
       <div className="grid gap-6 grid-cols-1">
